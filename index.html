@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kaju Flower Shop - Web Dev Assignment</title>
+    <title>Bloom Flower Shop - Web Dev Assignment</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
     
@@ -39,9 +39,9 @@
                     <a href="#home" class="hover:text-red-500 transition-colors">Home</a>
                    
                     <a href="#new-products" class="hover:text-red-500 transition-colors">Shop</a>
-                    <a href="#" class="hover:text-red-500 transition-colors">Pages</a>
-                    <a href="#" class="hover:text-red-500 transition-colors">Blog</a>
-                    <a href="#" class="hover:text-red-500 transition-colors">Contact</a>
+                    <a href="#featured" class="hover:text-red-500 transition-colors">Pages</a>
+                    <a href="#blog" class="hover:text-red-500 transition-colors">Blog</a>
+                    <a href="#contact" class="hover:text-red-500 transition-colors">Contact</a>
                 </nav>
 
                 <div class="flex items-center space-x-5 text-gray-700">
@@ -64,6 +64,7 @@
             </div>
         </div>
     </header>
+    <!--add home section-->
     <section  id="home"class="bg-[#ffebeb] relative overflow-hidden w-full py-12 md:py-20 flex items-center">
         
         <button class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-600 p-2 rounded-full shadow-sm transition-all hidden sm:block z-10">
@@ -174,20 +175,20 @@
     </section>
    
    
-    
+    <!--add new products section-->
    <section id ="new-products" class="py-16 bg-[#ffebeb]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
             <div class="text-center max-w-2xl mx-auto mb-12">
                 <h2 class="font-serif text-3xl sm:text-4xl font-bold text-gray-900 mb-3">New Products</h2>
-                <p class="text-gray-400 text-xs sm:text-sm max-w-md mx-auto leading-relaxed">
+                <p class=" font-serif italic text-gray-400 text-xs sm:text-sm max-w-md mx-auto leading-relaxed">
                     A perfect blend of creativity, energy, communication, happiness and love. Let us arrange a smile for you.
                 </p>
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                 
-                <div class="group relative bg-white transition-all">
+                <div class="group relative bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                     <div class="relative bg-[#f5f5f5] rounded-sm overflow-hidden aspect-square flex items-center justify-center p-6">
                         <span class="absolute top-3 left-3 bg-[#ff5252] text-white text-[10px] font-medium px-2.5 py-0.5 rounded-full z-10">6 Month</span>
                         <img src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&w=500&q=80" 
@@ -210,7 +211,7 @@
                     </div>
                 </div>
 
-                <div class="group relative bg-white transition-all">
+                <div class="group relative bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                     <div class="relative bg-[#f5f5f5] rounded-sm overflow-hidden aspect-square flex items-center justify-center p-6">
                         <img src="https://images.unsplash.com/photo-1591886960571-74d43a9d4166?auto=format&fit=crop&w=500&q=80"
                              alt="Hook Soapwort"
@@ -231,7 +232,7 @@
                     </div>
                 </div>
 
-                <div class="group relative bg-white transition-all">
+                <div class="group relative bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                     <div class="relative bg-[#f5f5f5] rounded-sm overflow-hidden aspect-square flex items-center justify-center p-6">
                         <span class="absolute top-3 left-3 bg-black text-white text-[10px] font-medium px-2 py-0.5 rounded-sm z-10">-35%</span>
                         
@@ -262,7 +263,9 @@
                     </div>
                 </div>
 
-                <div class="group relative bg-white transition-all">
+                <div class="group relative bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                   
+    
                     <div class="relative bg-[#f5f5f5] rounded-sm overflow-hidden aspect-square flex items-center justify-center p-6">
                         <img src="images/FoxGlove flower.jpeg"
                              alt="Foxglove Flower"
@@ -319,12 +322,14 @@
             </div>
         </div>
     </section>
+
+    <!--add featured section-->
     <section id="featured" class="py-16 bg-[#ffebeb] w-full block">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
             <div class="text-center max-w-2xl mx-auto mb-6">
                 <h2 class="font-serif text-3xl sm:text-4xl font-bold text-gray-900 mb-3">Featured Items</h2>
-                <p class="text-gray-400 text-xs sm:text-sm max-w-md mx-auto leading-relaxed">
+                <p class=" font-serif italic text-gray-400 text-xs sm:text-sm max-w-md mx-auto leading-relaxed">
                     A perfect blend of creativity, energy, communication, happiness and love. Let us arrange a smile for you.
                 </p>
             </div>
@@ -337,96 +342,96 @@
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                 
-                <div class="group relative bg-white rounded-2xl transition-all">
+                <div class="group relative bg-white rounded-2xl shadow-md transition-all">
                     <div class="relative bg-[#e5e5e5] rounded-2xl overflow-hidden aspect-square flex items-center justify-center p-6">
                         <span class="absolute top-3 left-3 bg-black text-white text-[10px] font-medium px-2 py-0.5 rounded-sm z-10">-24%</span>
                         <img src="images/Lily Majesty Palm.jpg" alt="Lily Majesty Palm" class="max-h-full max-w-full object-contain transition-transform duration-500 group-hover:scale-105">
                     </div>
                     <div class="text-center pt-4 pb-2 flex flex-col items-center">
                         <div class="flex items-center space-x-0.5 text-amber-400 mb-2"><i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400 stroke-amber-400"></i><i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400 stroke-amber-400"></i><i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400 stroke-amber-400"></i><i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400 stroke-amber-400"></i><i data-lucide="star" class="h-3.5 w-3.5 text-gray-300 stroke-gray-300"></i></div>
-                        <h3 class="font-serif text-sm font-bold text-gray-800 hover:text-red-500 transition-colors mb-1">Lily Majesty Palm</h3>
+                        <h3 class="font-serif text-sm font-bold text-gray-800 hover:text-purple-500 transition-colors mb-1">Lily Majesty Palm</h3>
                         <div class="flex items-center gap-2 text-xs"><span class="text-red-500 font-bold">$19.00</span><span class="text-gray-400 line-through">$24.00</span></div>
                     </div>
                 </div>
 
-                <div class="group relative bg-white rounded-2xl transition-all">
+                <div class="group relative bg-white rounded-2xl shadow-md transition-all">
                     <div class="relative bg-[#e5e5e5] rounded-sm overflow-hidden aspect-square flex items-center justify-center p-6">
                         <span class="absolute top-3 left-3 bg-black text-white text-[10px] font-medium px-2 py-0.5 rounded-sm z-10">-13%</span>
                         <img src="images/wild roses.jpeg" alt="Wild Roses" class="max-h-full max-w-full object-contain transition-transform duration-500 group-hover:scale-105">
                     </div>
                     <div class="text-center pt-4 pb-2 flex flex-col items-center">
                         <div class="flex items-center space-x-0.5 text-amber-400 mb-2"><i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400 stroke-amber-400"></i><i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400 stroke-amber-400"></i><i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400 stroke-amber-400"></i><i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400 stroke-amber-400"></i><i data-lucide="star" class="h-3.5 w-3.5 text-gray-300 stroke-gray-300"></i></div>
-                        <h3 class="font-serif text-sm font-bold text-gray-800 hover:text-red-500 transition-colors mb-1">Wild Roses</h3>
+                        <h3 class="font-serif text-sm font-bold text-gray-800 hover:text-purple-500 transition-colors mb-1">Wild Roses</h3>
                         <div class="flex items-center gap-2 text-xs"><span class="text-red-500 font-bold">$19.00</span><span class="text-gray-400 line-through">$22.00</span></div>
                     </div>
                 </div>
 
-                <div class="group relative bg-white rounded-2xl transition-all">
+                <div class="group relative bg-white rounded-2xl shadow-md transition-all">
                     <div class="relative bg-[#e5e5e5] rounded-sm overflow-hidden aspect-square flex items-center justify-center p-6">
                         <span class="absolute top-3 left-3 bg-[#ff5252] text-white text-[10px] font-medium px-2.5 py-0.5 rounded-full z-10">6 Month</span>
                         <img src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&w=500&q=80"alt="Spring Snowflake" class="max-h-full max-w-full object-contain transition-transform duration-500 group-hover:scale-105">
                     </div>
                     <div class="text-center pt-4 pb-2 flex flex-col items-center">
                         <div class="flex items-center space-x-0.5 text-amber-400 mb-2"><i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400 stroke-amber-400"></i><i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400 stroke-amber-400"></i><i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400 stroke-amber-400"></i><i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400 stroke-amber-400"></i><i data-lucide="star" class="h-3.5 w-3.5 text-gray-300 stroke-gray-300"></i></div>
-                        <h3 class="font-serif text-sm font-bold text-gray-800 hover:text-red-500 transition-colors mb-1">Spring Snowflake</h3>
+                        <h3 class="font-serif text-sm font-bold text-gray-800 hover:text-purple-500 transition-colors mb-1">Spring Snowflake</h3>
                         <div class="flex items-center gap-2 text-xs"><span class="text-red-500 font-bold">$19.00</span><span class="text-gray-400 line-through">$29.00</span></div>
                     </div>
                 </div>
 
-                <div class="group relative bg-white rounded-2xl transition-all">
+                <div class="group relative bg-white rounded-2xl shadow-md transition-all">
                     <div class="relative bg-[#e5e5e5] rounded-sm overflow-hidden aspect-square flex items-center justify-center p-6">
                         <span class="absolute top-3 left-3 bg-black text-white text-[10px] font-medium px-2 py-0.5 rounded-sm z-10">-27%</span>
                         <img src="https://images.unsplash.com/photo-1561181286-d3fee7d55364?auto=format&fit=crop&w=500&q=80" alt="Rock Soapwort" class="max-h-full max-w-full object-contain transition-transform duration-500 group-hover:scale-105">
                     </div>
                     <div class="text-center pt-4 pb-2 flex flex-col items-center">
                         <div class="flex items-center space-x-0.5 text-amber-400 mb-2"><i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400 stroke-amber-400"></i><i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400 stroke-amber-400"></i><i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400 stroke-amber-400"></i><i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400 stroke-amber-400"></i><i data-lucide="star" class="h-3.5 w-3.5 text-gray-300 stroke-gray-300"></i></div>
-                        <h3 class="font-serif text-sm font-bold text-gray-800 hover:text-red-500 transition-colors mb-1">Rock Soapwort</h3>
+                        <h3 class="font-serif text-sm font-bold text-gray-800 hover:text-purple-500 transition-colors mb-1">Rock Soapwort</h3>
                         <div class="flex items-center gap-2 text-xs"><span class="text-red-500 font-bold">$65.00</span><span class="text-gray-400 line-through">$90.00</span></div>
                     </div>
                 </div>
 
-                <div class="group relative bg-white rounded-2xl transition-all">
+                <div class="group relative bg-white rounded-2xl shadow-md transition-all">
                     <div class="relative bg-[#e5e5e5] rounded-sm overflow-hidden aspect-square flex items-center justify-center p-6">
                         <img src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&w=500&q=80" alt="Sweet Alyssum" class="max-h-full max-w-full object-contain transition-transform duration-500 group-hover:scale-105">
                     </div>
                     <div class="text-center pt-4 pb-2 flex flex-col items-center">
                         <div class="flex items-center space-x-0.5 text-amber-400 mb-2"><i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400 stroke-amber-400"></i><i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400 stroke-amber-400"></i><i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400 stroke-amber-400"></i><i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400 stroke-amber-400"></i><i data-lucide="star" class="h-3.5 w-3.5 text-gray-300 stroke-gray-300"></i></div>
-                        <h3 class="font-serif text-sm font-bold text-gray-800 hover:text-red-500 transition-colors mb-1">Sweet Alyssum</h3>
+                        <h3 class="font-serif text-sm font-bold text-gray-800 hover:text-purple-500 transition-colors mb-1">Sweet Alyssum</h3>
                         <div class="text-xs font-bold text-gray-900">$50.00</div>
                     </div>
                 </div>
 
-                <div class="group relative bg-white rounded-2xl transition-all">
+                <div class="group relative bg-white rounded-2xl shadow-md transition-all">
                     <div class="relative bg-[#e5e5e5] rounded-sm overflow-hidden aspect-square flex items-center justify-center p-6">
                         <span class="absolute top-3 left-3 bg-black text-white text-[10px] font-medium px-2 py-0.5 rounded-sm z-10">-19%</span>
                         <img src="images/summer savory.jpeg" alt="Summer Savory" class="max-h-full max-w-full object-contain transition-transform duration-500 group-hover:scale-105">
                     </div>
                     <div class="text-center pt-4 pb-2 flex flex-col items-center">
                         <div class="flex items-center space-x-0.5 text-amber-400 mb-2"><i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400 stroke-amber-400"></i><i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400 stroke-amber-400"></i><i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400 stroke-amber-400"></i><i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400 stroke-amber-400"></i><i data-lucide="star" class="h-3.5 w-3.5 text-gray-300 stroke-gray-300"></i></div>
-                        <h3 class="font-serif text-sm font-bold text-gray-800 hover:text-red-500 transition-colors mb-1">Summer Savory</h3>
+                        <h3 class="font-serif text-sm font-bold text-gray-800 hover:text-purple-500 transition-colors mb-1">Summer Savory</h3>
                         <div class="flex items-center gap-2 text-xs"><span class="text-red-500 font-bold">$40.00</span><span class="text-gray-400 line-through">$45.00</span></div>
                     </div>
                 </div>
 
-                <div class="group relative bg-white rounded-2xl transition-all">
+                <div class="group relative bg-white rounded-2xl shadow-md transition-all">
                     <div class="relative bg-[#e5e5e5] rounded-sm overflow-hidden aspect-square flex items-center justify-center p-6">
                         <img src="https://images.unsplash.com/photo-1561181286-d3fee7d55364?auto=format&fit=crop&w=500&q=80" alt="Rock Soapwort" class="max-h-full max-w-fullobject-contain transition-transform duration-500 group-hover:scale-105">
                     </div>
                     <div class="text-center pt-4 pb-2 flex flex-col items-center">
                         <div class="flex items-center space-x-0.5 text-amber-400 mb-2"><i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400 stroke-amber-400"></i><i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400 stroke-amber-400"></i><i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400 stroke-amber-400"></i><i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400 stroke-amber-400"></i><i data-lucide="star" class="h-3.5 w-3.5 text-gray-300 stroke-gray-300"></i></div>
-                        <h3 class="font-serif text-sm font-bold text-gray-800 hover:text-red-500 transition-colors mb-1">Rock Soapwort</h3>
+                        <h3 class="font-serif text-sm font-bold text-gray-800 hover:text-purple-500 transition-colors mb-1">Rock Soapwort</h3>
                         <div class="text-xs font-bold text-gray-900">$50.00</div>
                     </div>
                 </div>
 
-                <div class="group relative bg-white rounded-2xl transition-all">
+                <div class="group relative bg-white rounded-2xl shadow-md transition-all">
                     <div class="relative bg-[#e5e5e5] rounded-sm overflow-hidden aspect-square flex items-center justify-center p-6">
                         <span class="absolute top-3 left-3 bg-[#ff5252] text-white text-[9px] font-bold uppercase px-2 py-0.5 rounded-sm z-10">Soldout</span>
                         <img src="images/majesty plam.jpeg" alt="Majesty Plam" class="max-h-[160px] object-contain opacity-70 transition-transform duration-500 group-hover:scale-105">
                     </div>
                     <div class="text-center pt-4 pb-2 flex flex-col items-center">
                         <div class="flex items-center space-x-0.5 text-amber-400 mb-2"><i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400 stroke-amber-400"></i><i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400 stroke-amber-400"></i><i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400 stroke-amber-400"></i><i data-lucide="star" class="h-3.5 w-3.5 fill-amber-400 stroke-amber-400"></i><i data-lucide="star" class="h-3.5 w-3.5 text-gray-300 stroke-gray-300"></i></div>
-                        <h3 class="font-serif text-sm font-bold text-gray-800 hover:text-red-500 transition-colors mb-1">Majesty Palm</h3>
+                        <h3 class="font-serif text-sm font-bold text-gray-800 hover:text-purple-500 transition-colors mb-1">Majesty Palm</h3>
                         <div class="flex items-center gap-2 text-xs"><span class="text-red-500 font-bold">$19.00</span><span class="text-gray-400 line-through">$29.00</span></div>
                     </div>
                 </div>
@@ -434,6 +439,8 @@
             </div>
         </div>
     </section>
+
+    <!--blog section-->
     <section id="blog" class="py-20 bg-[#ffebeb] relative overflow-hidden w-full block">
         
         <div class="absolute left-0 bottom-16 sm:bottom-24 max-w-[120px] sm:max-w-[180px] opacity-90 pointer-events-none select-none">
@@ -455,7 +462,7 @@
 
                 <div class="space-y-6">
                     
-                    <p class="font-serif italic text-gray-600 text-sm sm:text-base lg:text-lg leading-relaxed max-w-2xl mx-auto">
+                    <p class="font-serif italic font-bold text-gray-600 text-sm sm:text-base lg:text-lg leading-relaxed max-w-2xl mx-auto">
                         "Felis eu pede mollis pretium. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus vivamus. felis eu pede mollis pretium."
                     </p>
                     
@@ -483,7 +490,7 @@
             
             <div class="text-center max-w-2xl mx-auto mb-16">
                 <h2 class="font-serif text-3xl sm:text-4xl font-bold text-gray-900 mb-3">Flower Experts</h2>
-                <p class="text-gray-400 text-xs sm:text-sm max-w-md mx-auto leading-relaxed">
+                <p class=" font-serif italic text-gray-400 text-xs sm:text-sm max-w-md mx-auto leading-relaxed">
                     A perfect blend of creativity, energy, communication, happiness and love. Let us arrange a smile for you.
                 </p>
             </div>
@@ -492,7 +499,7 @@
                 
                 <div class="flex flex-col items-center text-center group">
                     
-                    <div class="w-48 h-48 sm:w-52 sm:h-52 rounded-full overflow-hidden mb-5 shadow-sm bg-gray-100">
+                    <div class="w-48 h-48 sm:w-52 sm:h-52 rounded-full overflow-hidden mb-5 shadow-2xl bg-gray-100">
                         
                         <div class="w-full h-full rounded-full overflow-hidden bg-gray-50 shadow-inner">
                             <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&h=400&q=80" 
@@ -508,7 +515,7 @@
                 </div>
 
                 <div class="flex flex-col items-center text-center group">
-                    <div class="w-48 h-48 sm:w-52 sm:h-52 rounded-full overflow-hidden mb-5 shadow-sm bg-gray-100">
+                    <div class="w-48 h-48 sm:w-52 sm:h-52 rounded-full overflow-hidden mb-5 shadow-2xl bg-gray-100">
                         <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&h=400&q=80" 
                              alt="Shara friken" 
                              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
@@ -520,7 +527,7 @@
                 </div>
 
                 <div class="flex flex-col items-center text-center group">
-                    <div class="w-48 h-48 sm:w-52 sm:h-52 rounded-full overflow-hidden mb-5 shadow-sm bg-gray-100">
+                    <div class="w-48 h-48 sm:w-52 sm:h-52 rounded-full overflow-hidden mb-5 shadow-2xl bg-gray-100">
                         <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=400&h=400&q=80" 
                              alt="Torvi greac" 
                              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
@@ -532,7 +539,7 @@
                 </div>
 
                 <div class="flex flex-col items-center text-center group">
-                    <div class="w-48 h-48 sm:w-52 sm:h-52 rounded-full overflow-hidden mb-5 shadow-sm bg-gray-100">
+                    <div class="w-48 h-48 sm:w-52 sm:h-52 rounded-full overflow-hidden mb-5 shadow-2xl bg-gray-100">
                         <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&h=400&q=80" 
                              alt="Alonso Gomej" 
                              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
@@ -551,7 +558,7 @@
             
             <div class="text-center max-w-2xl mx-auto mb-16">
                 <h2 class="font-serif text-3xl sm:text-4xl font-bold text-gray-900 mb-3">From Our Blog</h2>
-                <p class="text-gray-400 text-xs sm:text-sm max-w-md mx-auto leading-relaxed">
+                <p class=" font-serif italic text-gray-400 text-xs sm:text-sm max-w-md mx-auto leading-relaxed">
                     A perfect blend of creativity, energy, communication, happiness and love. Let us arrange a smile for you.
                 </p>
             </div>
@@ -701,7 +708,9 @@
             </div>
         </div>
     </section>
-    <footer class="bg-[#1a1a1a] text-gray-400 text-xs py-16 pt-20 w-full block border-t border-gray-800">
+
+    <!--add footer section-->
+    <footer id="contact" class="bg-[#1a1a1a] text-gray-400 text-xs py-16 pt-20 w-full block border-t border-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12 pb-16 border-b border-gray-800">
@@ -709,9 +718,9 @@
                 <div class="flex flex-col space-y-5">
                     <div class="flex items-center space-x-2 text-white">
                         <i data-lucide="flower" class="h-6 w-6 stroke-[1.5] text-white"></i>
-                        <span class="font-serif text-2xl font-semibold tracking-wide">Kngu.</span>
+                        <span class="font-serif text-2xl font-semibold tracking-wide">Bloom</span>
                     </div>
-                    <p class="text-gray-400 leading-relaxed text-[13px] max-w-sm">
+                    <p class=" font-serif italic text-gray-400 leading-relaxed text-[13px] max-w-sm">
                         A perfect blend of creativity, energy, communication, happiness and love. Let us arrange a smile for you.
                     </p>
                     <div class="flex items-center space-x-3 pt-2">
